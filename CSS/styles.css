@@ -20,8 +20,18 @@ footer {
   bottom: 0;
 }
 
+footer nav ul {
+  /*forcing the list to be to the left*/
+  padding-left: 0;
+}
+
 footer nav ul li {
   display: inline-block;
-  width: auto;
+  width: 36%;
   text-align: center;
+}
+
+form legend {
+  font-weight: bold;
+  font-size: 24px;
 }
