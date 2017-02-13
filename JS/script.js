@@ -1,0 +1,6 @@
+
+function checkInput() {
+
+  //to do
+  
+}
