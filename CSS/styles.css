@@ -9,3 +9,19 @@
 html {
   background-image: url(http://i.stack.imgur.com/jGlzr.png)
 }
+
+body {
+
+}
+
+footer {
+  /* Really hacky way to force the footer to be at the "bottom" of the page */
+  position: fixed;
+  bottom: 0;
+}
+
+footer nav ul li {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
