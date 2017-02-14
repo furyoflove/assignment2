@@ -13,7 +13,7 @@ Assignment 2 - HTML index page
     <title>Francis's Webpage</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <script src="./JS/script.js"></script>
+    <script type ="text/javascript" src="./JS/script.js"></script>
   </head>
 
   <body>
@@ -34,16 +34,13 @@ Assignment 2 - HTML index page
         </p>
       </section>
       <section>
-        <form class="" action="index.html" onsubmit="return checkInput()" method="post">
+        <form name="submission" onsubmit="checkInput()">
           <fieldset>
             <legend>Send me a message!</legend>
-            Your name: <br>
-            <input type="text" name="name" value=""> <br>
-            Your email: <br>
-            <input type="text" name="email" value=""> <br>
             Your message: <br>
-            <input type="text" name="message" value=""> <br><br>
+            <input type="text" name="message" value="" class = "messagebox"> <br><br>
             <input type="submit" value="Submit">
+            <p id = "status"></p>
           </fieldset>
         </form>
       </section>

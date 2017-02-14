@@ -7,11 +7,11 @@
 */
 
 html {
-  background-image: url(http://i.stack.imgur.com/jGlzr.png)
+  background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Pineapple-cut-Grey-Seamless-Pattern-For-Website-Background.jpg)
 }
 
 body {
-
+  /* add stuff later */
 }
 
 footer {
@@ -31,7 +31,17 @@ footer nav ul li {
   text-align: center;
 }
 
+form {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 form legend {
   font-weight: bold;
   font-size: 24px;
+}
+
+.messagebox {
+  height: 100px;
+  width: 200px;
 }
