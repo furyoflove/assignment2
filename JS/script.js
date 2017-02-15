@@ -6,24 +6,25 @@ Spring 2017
 Assignment 2 -- scripting
 */
 
+
 /*
 Validate form by checking if fields have been filled out
 ...Not too crazy on the checking...As long as the field is filled out it's ok
 */
 function validateForm() {
 
-  var name    =    document.forms["myform"]["name"].value,
-      email   =    document.forms["myform"]["email"].value,
-      message =    document.forms["myform"]["message"].value;
+  var name      =    document.forms["myform"]["name"].value,
+      email     =    document.forms["myform"]["email"].value,
+      message   =    document.forms["myform"]["message"].value;
 
   //  Used to for error checking
-  var array   = [name, email, message],
-      fields  = ["name", "email", "message"];
+  var array   =   [name, email, message],
+      fields  =   ["name", "email", "message"];
 
   //  Used for error printing
-  var err_msg     = "",
-      err_disp    = "",
-      err_count   = 0;
+  var err_msg     =   "",
+      err_disp    =   "",
+      err_count   =   0;
 
   //  Check to make sure all fields are filled out
   for (var i = 0; i < array.length; i++) {
@@ -35,7 +36,7 @@ function validateForm() {
     }
   }
 
-
+  //  Display error messages if any
   if(err_count > 0) {
       alert(err_msg);
       document.getElementById("formStatus").innerHTML = err_disp;
@@ -46,6 +47,6 @@ function validateForm() {
     document.getElementById("SectionThree").style.display = 'none'; // hide form;
   }
 
-
   return false;
+
 }
