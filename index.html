@@ -13,6 +13,12 @@
     <title>Francis's Webpage</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./CSS/styles.css">
+
+    <!--
+      I could have added the javascript call at the bottom of the body
+      to load pages faster but page loading speeds aren't that big of an issue
+      for this project...
+    -->
     <script type ="text/javascript" src="./JS/script.js"></script>
   </head>
 
@@ -24,6 +30,10 @@
 
     <main>
 
+      <!--
+        These section id's don't really do anything
+        other than act as labels for when I coded the html...
+      -->
       <section id = "SectionOne">
         <p>
           So, I'm planning on using this website to house some stuff about me
@@ -37,7 +47,7 @@
       </section>
 
       <section id = "SectionThree">
-        <form name="myform" onsubmit="return validateForm()" method="post">
+        <form name="myform" id = "form" onsubmit="return validateForm()" method="post">
           <fieldset>
             <legend>Send Me a Message!</legend>
 
@@ -56,7 +66,9 @@
         </form>
       </section>
 
-      <!-- Hidden until user fills out form -->
+      <!--
+        The below section is hidden until user tries to fill out form
+      -->
       <section id "SectionFour">
         <p id = "formStatus"></p>
       </section>
